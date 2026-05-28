@@ -80,26 +80,13 @@ header .logo {
     background-color: #caf0f8;
 }
 
-.hero-trust {
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.hero-trust div {
-    font-size: 1.2rem;
-    font-weight: bold;
-}
-
-/* Especialidades Médicas */
-.especialidades {
+/* Sections */
+section {
     padding: 4rem 2rem;
-    background-color: #fff;
     text-align: center;
 }
 
-.especialidades h2 {
+section h2 {
     font-size: 2rem;
     margin-bottom: 2rem;
 }
@@ -110,36 +97,6 @@ header .logo {
     gap: 2rem;
 }
 
-.especialidad {
-    background-color: #f1f1f1;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.especialidad img {
-    max-width: 100px;
-    margin-bottom: 1rem;
-}
-
-.especialidad h3 {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-/* Nuestros Médicos */
-.medicos {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.medicos h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
 .flex {
     display: flex;
     flex-wrap: wrap;
@@ -147,79 +104,22 @@ header .logo {
     justify-content: center;
 }
 
-.medico {
+.card {
     background-color: #fff;
     padding: 1.5rem;
     border-radius: 8px;
-    text-align: center;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    flex: 1 1 calc(33.333% - 2rem);
-    max-width: 300px;
+    text-align: center;
 }
 
-.medico .foto {
-    width: 100px;
-    height: 100px;
-    background-color: #0077b6;
-    border-radius: 50%;
-    margin: 0 auto 1rem;
+.card img {
+    max-width: 100px;
+    margin-bottom: 1rem;
 }
 
-.medico h3 {
+.card h3 {
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
-}
-
-/* Obras Sociales */
-.obras-sociales {
-    padding: 4rem 2rem;
-    background-color: #fff;
-    text-align: center;
-}
-
-.obras-sociales h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.obras-sociales ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-}
-
-.obras-sociales li {
-    background-color: #f1f1f1;
-    padding: 0.5rem 1rem;
-    border-radius: 5px;
-    font-weight: bold;
-}
-
-/* Contacto y Footer */
-.contacto {
-    padding: 4rem 2rem;
-    background-color: #f9f9f9;
-    text-align: center;
-}
-
-.contacto h2 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
-
-.contacto p {
-    margin-bottom: 0.5rem;
-}
-
-.mapa {
-    margin-top: 2rem;
-    padding: 2rem;
-    background-color: #e0e0e0;
-    border-radius: 8px;
-    font-size: 1rem;
-    color: #555;
 }
 
 footer {
