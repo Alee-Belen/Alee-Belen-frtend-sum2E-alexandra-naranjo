@@ -1,7 +1,27 @@
+/* Variables de colores */
+:root {
+    --primary-color: #0077b6; /* Azul principal */
+    --secondary-color: #90e0ef; /* Azul claro */
+    --accent-color: #caf0f8; /* Azul más claro */
+    --error-color: #ff6b6b; /* Rojo para errores */
+    --success-color: #51cf66; /* Verde para éxito */
+    --text-color: #333; /* Gris oscuro */
+    --background-color: #f9f9f9; /* Fondo claro */
+    --white: #fff;
+    --border-radius: 8px;
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: var(--background-color);
+    color: var(--text-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,24 +30,26 @@ body {
 }
 
 form {
-    background: #fff;
+    background: var(--white);
     padding: 2rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     max-width: 800px;
     width: 100%;
 }
 
 fieldset {
-    border: 1px solid #ddd;
+    border: 1px solid var(--secondary-color);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
-    border-radius: 8px;
+    border-radius: var(--border-radius);
+    background-color: var(--accent-color);
 }
 
 legend {
     font-weight: bold;
     padding: 0 0.5rem;
+    color: var(--primary-color);
 }
 
 label {
@@ -40,36 +62,55 @@ input, select, textarea {
     width: 100%;
     padding: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 4px;
+    border: 1px solid var(--secondary-color);
+    border-radius: var(--border-radius);
     font-size: 1rem;
 }
 
 input:focus, select:focus, textarea:focus {
-    border-color: #0077b6;
+    border-color: var(--primary-color);
     outline: none;
 }
 
 button {
     padding: 0.75rem 1.5rem;
     border: none;
-    border-radius: 4px;
-    background-color: #0077b6;
-    color: #fff;
+    border-radius: var(--border-radius);
+    background-color: var(--primary-color);
+    color: var(--white);
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #005f8a;
+    background-color: var(--secondary-color);
 }
 
 button[type="reset"] {
-    background-color: #ddd;
-    color: #333;
+    background-color: var(--accent-color);
+    color: var(--text-color);
 }
 
 button[type="reset"]:hover {
-    background-color: #bbb;
+    background-color: var(--secondary-color);
+}
+
+/* Feedback visual */
+.campo-error {
+    border: 2px solid var(--error-color);
+    background-color: #ffe6e6;
+}
+
+.campo-ok {
+    border: 2px solid var(--success-color);
+    background-color: #e6ffe6;
+}
+
+.mensaje-error {
+    color: var(--error-color);
+    font-size: 0.875rem;
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+    display: block;
 }

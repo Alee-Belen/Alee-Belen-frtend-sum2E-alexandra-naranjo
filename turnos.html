@@ -14,30 +14,27 @@
                 <legend>Datos del Paciente</legend>
                 <label for="nombre">Nombre:</label>
                 <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="apellido">Apellido:</label>
                 <input type="text" id="apellido" name="apellido" placeholder="Ingrese su apellido" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="dni">DNI:</label>
                 <input type="text" id="dni" name="dni" placeholder="Ingrese su DNI" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="email">Correo Electrónico:</label>
                 <input type="email" id="email" name="email" placeholder="Ingrese su correo" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="telefono">Teléfono:</label>
                 <input type="tel" id="telefono" name="telefono" placeholder="Ingrese su teléfono" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="fecha-nacimiento">Fecha de Nacimiento:</label>
                 <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
-                
-                <label for="genero">Género:</label>
-                <select id="genero" name="genero" required>
-                    <option value="">Seleccione</option>
-                    <option value="masculino">Masculino</option>
-                    <option value="femenino">Femenino</option>
-                    <option value="otro">Otro</option>
-                    <option value="no-especificar">Prefiero no especificar</option>
-                </select>
+                <small class="mensaje-error"></small>
             </fieldset>
 
             <!-- Sección 2: Datos del Turno -->
@@ -53,12 +50,14 @@
                     <option value="traumatologia">Traumatología</option>
                     <option value="neurologia">Neurología</option>
                 </select>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="medico">Médico:</label>
                 <select id="medico" name="medico" disabled required>
                     <option value="">Seleccione una especialidad primero</option>
                 </select>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="tipo-consulta">Tipo de Consulta:</label>
                 <select id="tipo-consulta" name="tipo-consulta" required>
                     <option value="">Seleccione</option>
@@ -66,20 +65,24 @@
                     <option value="control">Control</option>
                     <option value="resultado-estudios">Resultado de Estudios</option>
                 </select>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="fecha-turno">Fecha del Turno:</label>
                 <input type="date" id="fecha-turno" name="fecha-turno" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="hora-turno">Hora del Turno:</label>
                 <input type="time" id="hora-turno" name="hora-turno" required>
-                
+                <small class="mensaje-error"></small>
+
                 <label for="modalidad">Modalidad:</label>
                 <select id="modalidad" name="modalidad" required>
                     <option value="">Seleccione</option>
                     <option value="presencial">Presencial</option>
                     <option value="videoconsulta">Videoconsulta</option>
                 </select>
-                
+                <small class="mensaje-error"></small>
+
                 <div id="plataforma-container" style="display: none;">
                     <label for="plataforma">Plataforma Preferida:</label>
                     <select id="plataforma" name="plataforma">
@@ -88,6 +91,7 @@
                         <option value="google-meet">Google Meet</option>
                         <option value="teams">Teams</option>
                     </select>
+                    <small class="mensaje-error"></small>
                 </div>
             </fieldset>
 
@@ -98,5 +102,6 @@
             </div>
         </form>
     </main>
+    <script src="js/validaciones.js"></script>
 </body>
 </html>
